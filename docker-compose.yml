@@ -1,0 +1,51 @@
+version: '2.2'
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.nginx
+      args:
+        PHP_FPM_SERVER: php
+        PHP_FPM_PORT: 9000
+    ports:
+      - ${DOCKER_NGINX_EXTERNAL_PORT-80}:80
+    depends_on:
+      - php
+    #links:
+    #  - php
+    volumes:
+      - .:/var/www/
+
+  php:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        XDEBUG: "false"
+    volumes:
+      - .:/var/www/
+      - ./docker/php.ini:/usr/local/etc/php/conf.d/php.ini
+    environment:
+      APP_ENV: local
+    #links:
+    #  - mysql
+
+  mysql:
+    image: mariadb:10.5.8
+    volumes:
+      - mysqldata:/var/lib/mysql
+      - ./docker/mysql-database-test.sql:/docker-entrypoint-initdb.d/mysql-database-test.sql
+    environment:
+      MYSQL_DATABASE: dbtest
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+    ports:
+      - ${DOCKER_MYSQL_EXTERNAL_PORT-3311}:3306
+    command: [ 'mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
+
+  redis:
+      image: redis
+
+volumes:
+  mysqldata:
+    driver: local

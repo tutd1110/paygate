@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="phuongthuc.css">
+
+    <title>Phương thức thanh toán</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="overlay hidden" id="overlay"></div>
+        <div class="popup hidden" id="popup">
+            <div class="box_popup ">
+                <div class="__box_popup">
+                    <div class="img_bank " id="popup_img_bank">
+                        <img src="img/Group 8084 (1).png" alt="" max-width="200px">
+                    </div>
+                    <div class="content_popup ">
+                        <div class="close_popup" id="close_popup">
+                            <img src="img/Group 7697.png" alt="">
+                        </div>
+                        <div class="title-popup">
+                            <h2>Thông tin chuyển khoản</h2>
+                        </div>
+                        <div class="__content_popup">
+                            <ul>
+                                <p class="name_company">Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</p>
+                                <li>Số tài khoản:<span>102-010-001-874-244</span>
+                                </li>
+                                <li>Chi nhánh: <span>Ba Đình, Hà Nội</span>
+                                </li>
+                                <li>Số tiền cần chuyển: <span style="color: #FF4545;">1.000.000VND</span>
+                                </li>
+                                <li>Nội dung chuyển khoản: <span style="color: #1D96EE;">SCR 0868000633</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button_popup">
+                    <p class="continue">Tiếp tục</p>
+                    <p class="come_back" id="come_back">Quay lại</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="header">
+            <div class="logo-header"><img src="img/Frame 828209.png" alt=""></div>
+            <div class="logo-header-mobi"><img src="img/Group 11.png" alt=""></div>
+            <div class="title-header">
+               <div class="img-header"> <img src="img/Title.png" alt=""></div>
+               <div class="img-header-mobi"> <img src="img/Title-mobi.png" alt=""></div>
+                <h2>Phương thức thanh toán</h2>
+            </div>
+        </div>
+        <div class="container_main">
+            <div class="main">
+                <div class="payment-methods_main">
+                    <div class="title-choose-payment">
+                        <h2>Lựa chọn phương thức để tiếp tục thanh toán:</h2>
+                    </div>
+                    <div class="img-discount"><img src="img/Frame 828154 (3).png" alt="">
+                        <p>Mã giảm giá 500k cho đơn hàng <br>đầu tiên thanh toán trực tuyến</p>
+                    </div>
+                    <div class="__list-payment-methods row">
+                        <div class="col-xl-4 col-6">
+                            <a href="" id="bank_tranfer"><img src="img/Phương thức thanh toán.png" alt=""></a>
+                        </div>
+                        <div class="col-xl-4 col-6">
+                            <a href=""><img src="img/Phương thức thanh toán (1).png" alt=""></a>
+                        </div>
+                        <div class="col-xl-4 col-6 momo">
+                            <a href=""><img src="img/Phương thức thanh toán (2).png" alt=""></a>
+                        </div>
+                        <hr>
+                        <div class="hidden" id="box_banks">
+                            <div class="bank row ">
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="vietin"><img src="img/Group 8082.png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="vp"><img src="img/Group 8081.png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="vietcom"><img src="img/Group 8083.png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="tech"><img src="img/Group 8084.png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="bidv"><img src="img/Group 8082 (1).png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="agribank"><img src="img/Group 8085.png" alt=""></a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="" class="bank-item" id="msb"><img src="img/Group 8082 (2).png" alt=""></a>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class=" application row">
+                            <div class="col-xl-4 col-6 momo-mobi">
+                                <a href=""><img src="img/Phương thức thanh toán (2).png" alt=""></a>
+                            </div>
+                            <div class="col-xl-4 col-6">
+                                <a href=""><img src="img/Phương thức thanh toán (3).png" alt=""></a>
+                            </div>
+                            <div class="col-xl-4 col-6">
+                                <a href=""><img src="img/Phương thức thanh toán (4).png" alt=""></a>
+                            </div>
+                            <div class="col-xl-4 col-6">
+                                <a href=""><img src="img/Phương thức thanh toán (5).png" alt=""></a>
+                            </div>
+                            <div class="col-xl-4 col-6">
+                                <a href=""><img src="img/Phương thức thanh toán (6).png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="invoice">
+                    <div class="content-billing">
+                        <div class="title-content-billing">
+                            <h2>Hoá đơn thanh toán</h2>
+                        </div>
+                        <div class="title-info"><img src="img/user.png" alt=""><span>Thông tin người mua </span></div>
+                        <div class="info-buyer">
+                            <p>Họ và tên : <span>Nguyễn Danh Hải</span></p>
+                            <p>Số điện thoại : 0334446666</p>
+                        </div>
+                        <hr>
+                        <div class="title-info"><img src="img/shopping-cart.png" alt=""><span>Thông tin đơn hàng</span>
+                        </div>
+                        <div class="info-order">
+                            <p>Sản phẩm đang có : <span style="color: #1D96EE; font-weight: 700;">03</span></p>
+                            <ul>
+                                <li>PAT-C Toán Luyện thi đại học quốc gia Hà Nội
+                                    <p>Gói học: <span>1 năm</span></p>
+                                </li>
+                                <li>Luyện thi tốt nghiệp THPT môn Sinh học (Pen-C)
+                                    <p>Gói học: <span>1 năm</span></p>
+                                </li>
+                                <li>Chuyên đề bất đẳng thức đáng nhớ - Thầy Trần Phương, Lê Hoài Nam
+                                    <p>Gói học: <span>1 năm</span></p>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                        <div class="title-info"><img src="img/receipt.png" alt=""><span>Thông tin thanh toán</span>
+                        </div>
+                        <div class="info-pay">
+                            <p>Mã giảm giá đã áp dụng : <span>HMO123VN123</span></p>
+                            <div>
+                                <div class="payment flex">
+                                    <div class="payment-study">Học phí</div>
+                                    <div class="total-price">1.500.000 đ</div>
+                                </div>
+                                <div class="discount flex">
+                                    <div class="__discount">Mã giảm giá</div>
+                                    <div class="total-discount" style="color: #499D4E;">-500.000 đ</div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="last-price flex">
+                                <div class="last-total-price">Tổng cộng</div>
+                                <div class="__last-total-price">1.000.000 đ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-invoice">
+                        <img src="img/Bill (1).png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer row">
+            <div class="box-footer">
+                <div class="footer-left col">
+                    <div class="logo-footer">
+                        <div class="logo-left"><img src="img/Logo.png" alt=""></div>
+                        <div class="logo-right"><img src="img/image 8.png" alt=""></div>
+                    </div>
+                    <div class="address">
+                        <div class="title-address">
+                            <h2>Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h2>
+                        </div>
+                        <div class="content-address">
+                            <p>Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu
+                                Giấy, Hà Nội.</p>
+                            <p>Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ
+                                Chí
+                                Minh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right col">
+                    <div class="support-customer ">
+                        <div class="title-support">
+                            <h2>HỖ TRỢ KHÁCH HÀNG</h2>
+                        </div>
+                        <div class="content-support">
+                            <p>Trung tâm hỗ trợ</p>
+                            <p>Email: hotro@ hocmai.vn</p>
+                            <p>Đường dây nóng: 1900 6933</p>
+                        </div>
+                    </div>
+                    <div class="for-partners ">
+                        <div class="title-partners">
+                            <h2>DÀNH CHO ĐỐI TÁC</h2>
+                        </div>
+                        <div class="content-partners">
+                            <p>Email: info@hocmai.vn</p>
+                            <p>Tel: +84 (24) 3519-0591</p>
+                            <p>Fax: +84 (24) 3519-0587</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer-mobi">
+                <div class="footer-left col">
+                    <div class="logo-footer">
+                        <div class="logo-left"><img src="img/Logo.png" alt=""></div>
+                        <div class="logo-right"><img src="img/image 8.png" alt=""></div>
+                    </div>
+                    <div class="address">
+                        <div class="title-address">
+                            <h2>Công ty Cổ phần Đầu tư và Dịch vụ Giáo dục</h2>
+                        </div>
+                        <div class="content-address">
+                            <p>Văn phòng Hà Nội: Tầng 4, Tòa nhà 25T2, Đường Nguyễn Thị Thập, Phường Trung Hoà, Quận Cầu
+                                Giấy, Hà Nội.</p>
+                            <p>Văn phòng TP.HCM: 13M đường số 14 khu đô thị Miếu Nổi, Phường 3, Quận Bình Thạnh, TP. Hồ
+                                Chí
+                                Minh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-footer ">
+                <div class="__box-last-footer">
+                    <div class="last-footer-left">
+                        <p>MST: 0102183602 do Sở kế hoạch và Đầu tư thành phố Hà Nội <br> cấp ngày 13 tháng 03 năm 2007
+                        </p>
+                    </div>
+                    <div class="last-footer-right">
+                        <p>Giấy phép cung cấp dịch vụ mạng xã hội trực tuyến số 597/GP-BTTTT Bộ Thông tin và Truyền
+                            thông
+                            cấp ngày 30/12/2016.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="last-footer-mobi">
+                <div class="__box-last-footer-mobi">
+                    <div class="last-footer-left-mobi">
+                        <p>MST: 0102183602 do Sở kế hoạch và Đầu tư thành phố Hà Nội <br> cấp ngày 13 tháng 03 năm 2007
+                        </p>
+                    </div>
+                    <div class="last-footer-right-mobi">
+                        <p>Giấy phép cung cấp dịch vụ mạng xã hội trực tuyến số 597/GP-BTTTT Bộ Thông tin và Truyền
+                            thông
+                            cấp ngày 30/12/2016.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
